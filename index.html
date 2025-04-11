@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Engineering College, Kishanganj</title>
+    <!-- Include Yanone Kaffeesatz Google Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
+    
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Top Header Styles */
+        .top-header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top-header .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .top-header ul.hidden-xs {
+            list-style-type: none;
+            position: absolute;
+            top: -1px;
+            right: 10px;
+            z-index: 50;
+            font-size: 12px;
+        }
+
+    
+        .top-header ul.hidden-xs li {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 0px;
+        }
+
+        .top-header ul.hidden-xs li span {
+            cursor: pointer;
+        }
+
+      
+
+        .top-header .logo-left {
+            float: left;
+        }
+
+        .top-header .logo-right {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .top-header .logo-right span {
+            display: block;
+        }
+
+        .top-header .logo-right #logoTextLine1 {
+            font-size: 24px;
+            margin-top: 19px;
+            line-height: 1.2;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+
+        .top-header .logo-right #logoTextLine2 {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.2;
+            font-family: 'Roboto',sans-serif;
+            margin-top: 22px;
+        }
+
+        .top-header .top-header-menu-wrapper {
+            float: right;
+        }
+
+        .top-header .top-header-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 42px;
+        }
+
+        .top-header .top-header-menu li {
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+
+        .top-header .top-header-menu li a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #285690;
+            
+        }
+
+        .top-header .top-header-menu li a:hover {
+            color: #ff0a0a;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #285690;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            margin-top: -4px;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li a {
+          
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        
+        }
+
+        .navbar ul li a:hover {
+            background-color: #12407c00;
+            color: #cdcdcd;
+          
+        }
+
+
+
+        
+
+
+
+       
+
+
+        .navbar ul li ul {
+            position: absolute;
+            background: white;
+            top: 100%;
+            left: 0;
+            display: none;
+            min-width: 234px;
+            
+           
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar ul li.active > ul {
+            display: block;
+        }
+
+        .navbar ul li.active > a {
+            
+            background-color:  rgb(226, 226, 226);
+            color: rgba(0, 0, 0, 0.692);
+
+
+
+            display: inline-block; 
+  height: 51px; 
+ line-height: 55px; 
+  padding: 0 15px; 
+margin-top: -7px;
+
+    
+           
+            
+        }
+
+       
+
+
+
+
+
+        .navbar ul li ul li {
+            width: 100%;
+           
+        }
+
+  
+        .navbar ul li ul li a {
+    color: rgba(0, 0, 0, 0.767);
+    padding: 5px 10px; 
+    display: block;
+    font-size: 14px; 
+}
+
+    
+
+        .navbar ul li ul li a:hover {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+       
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+          
+            width: 100%;
+            max-width: 1280px;
+            margin: 0;
+            margin-top: -19px; 
+
+           
+        }
+
+       
+        .hero-section {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 450px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+       
+
+       
+        footer {
+            background-color: #0d2e5b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+
+       
+    .image-slider {
+        width: 65%;
+   
+    }
+    
+    .carousel-inner .item img {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+  
+    .news-slider {
+        width: 35%;
+        height: 480px;
+        overflow: hidden;
+        position: relative;
+        background: #f8f9fa;
+        border: 1px solid #ddd;
+    }
+
+    .news-slider h2{
+        padding: 15px; 
+        margin: 0; 
+        background: #e9e6e6;
+        color: rgb(0, 0, 0);
+        font-size: small;
+        font-weight: bold;
+    }
+
+    .news-list {
+        position: absolute;
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+     
+    }
+ 
+
+
+  
+    .news-item {
+    width: 100%;
+    height: 48px;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+
+}
+   
+
+
+    .news-item a{
+        color: black;
+    }
+
+
+
+    .news-item.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+    .news-date {
+        font-size: 0.9em;
+        color: #000000;
+        margin-right: 4px;
+        border: 1px solid rgb(163, 163, 163);
+        border-radius: 0.3rem;
+        font-weight: bold;
+        font-size: 11px;
+        padding: 2px;
+    }
+
+    .news-notice{
+        color: white;
+        background-color: rgb(244, 163, 0);
+        border: 0.5px solid rgb(244, 163, 0);
+        border-radius: 0.3rem;
+        font-weight: bold;
+        font-size: 11px;
+        padding: 2px 6px 2px 6px;
+    }
+
+    .news-news{
+        color: white;
+        background-color:  #3a77c1;
+        border: 0.5px solid  #3a77c1;
+        border-radius: 0.3rem;
+        font-weight: bold;
+        font-size: 11px;
+        padding: 2px 6px 2px 6px;
+    }
+
+
+
+
+
+
+
+    
+     .carousel-caption{
+      
+   background-color: rgba(0, 0, 0, 0.564);
+       
+    }
+
+
+
+    .carousel-caption{
+             width: 430px;
+            height: 70px; 
+            padding: 10px;
+            text-align: left;
+         
+            background-color: rgba(0, 0, 0, 0.564);
+            opacity: 0;
+            transform: translateY(-30px); /* Initially 20px lower */
+
+            animation: fadeInScale 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: translateY(-30px); /* Initially 20px lower */
+
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-60px); /* Initially 20px lower */
+
+            }
+        }
+
+ 
+
+#section-updates-ticker {
+    background: #f8f9fa; 
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+#ticker-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#list-updates {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: tickerScroll 50s linear infinite;
+}
+
+#list-updates li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+#list-updates li i {
+    margin-right: 8px;
+    color: rgb(0, 0, 0); 
+}
+
+
+@keyframes tickerScroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    85% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for Minister photo */
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    85% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slide-from-left {
+    animation: slideFromLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.slide-from-top {
+    animation: slideFromTop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    85% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-from-right {
+    animation: slideFromRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.slide-from-right::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #285690;
+    animation: slideFromRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+@keyframes slideAndBounce {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    75% {
+      
+        opacity: 1;
+    }
+    85% {
+     
+        opacity: 1;
+    }
+    92% {
+    
+        opacity: 1;
+    }
+    100% {
+     
+        opacity: 1;
+    }
+}
+
+.feature-card {
+    width: 22%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-right: 20px;
+    opacity: 0;
+}
+
+.feature-card:nth-child(1) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.feature-card:nth-child(2) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.3s;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #606060;
+    height: 11px;
+    padding: 15px;
+    z-index: 1;
+}
+
+.card-content h3 {
+    margin: 0;
+    margin-top: -4px;
+    margin-left: -11px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.card-content h3::after {
+    content: '\f105';  /* Font Awesome angle-right icon unicode */
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+    margin-right: -20px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #606060b7;
+    transition: bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0.95;
+}
+
+.feature-card:hover .overlay {
+    bottom: 0;
+}
+
+.notice-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    margin-right: 2px;
+    font-size: 15.5px;
+    transition: all 0.3s ease;
+    border: none;
+    border-top-left-radius: 3.2px;
+    border-top-right-radius: 3.2px;
+}
+
+.notice-btn:hover, .notice-btn.active {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+.notice-btn i {
+    margin-right: 8px;
+    font-size: 17.5px;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.notice-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.notice-header {
+    margin-top: 5px;
+}
+
+.notice-date {
+    color: #666;
+    font-size: 13px;
+}
+
+.notice-tag {
+    background-color: #F7941E;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.notice-link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 15.5px;
+}
+
+.notice-link:hover {
+    color: #0082B3;
+}
+
+.notice-link i {
+    margin-right: 8px;
+    color: #0082B3;
+}
+
+.important-links-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    background: linear-gradient(to bottom, #285690, #1a3b66);
+    color: white;
+    padding: 12px 15px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #1a3b66;
+}
+
+.important-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.important-links-list li {
+    border-bottom: 1px solid #eee;
+}
+
+.important-links-list li a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.important-links-list li a:hover {
+    background-color: #f5f5f5;
+    padding-left: 20px;
+}
+
+.important-links-list li i {
+    margin-right: 10px;
+    color: #285690;
+}
+
+.content-line {
+    height: 4px;
+    background-color: #0082B3;
+    margin-bottom: 0;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn {
+    display: inline-block;
+    padding: 5px 13px;
+    color: rgba(0, 0, 0, 0.776);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    background-color: #e8e8e8 !important;
+    border: 0.1px solid rgba(0, 0, 0, 0.158);
+}
+
+.view-more-btn:hover {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #dedede !important;
+}
+
+.latest-image-card:nth-child(1) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.latest-image-card:nth-child(2) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.2s;
+}
+
+.latest-image-card:nth-child(3) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.4s;
+}
+
+.latest-image-card:nth-child(4) {
+    animation: slideAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.6s;
+}
+
+/* Overlay and Dialog Box Styles */
+.overlay-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.overlay-dialog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+    animation: expandFromCenter 0.8s ease-in-out forwards;
+    transform-origin: center;
+}
+
+@keyframes expandFromCenter {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.dialog-box {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: breathing 3s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.dialog-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #c8fea4, #82cb52);
+    animation: slideInLeft 0.8s ease-in-out;
+    z-index: -1;
+}
+
+.dialog-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, #c8fea4, #82cb52);
+    animation: slideInRight 0.8s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromSides {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.dialog-box i {
+    color: #ff4444;
+    font-size: 48px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: iconPulse 3s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.dialog-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: textGlow 3s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.dialog-box p {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: textGlow 3s ease-in-out infinite;
+}
+
+.dialog-box button {
+    background-color: #285690;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: buttonPulse 3s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.dialog-box button:hover {
+    background-color: #1a3b66;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="container" style="position: relative;">
+            <!-- Font Size and Theme Options -->
+            <ul class="hidden-xs" style="list-style-type: none; position: absolute; top: -1px; right: 10px; z-index: 50; font-size: 12px;">
+                <li style="display: inline-block; vertical-align: top; margin-top: 5px;">Font Size:</li>
+                <li style="display: inline-block; padding: 3px; vertical-align: top; background: #333; color: #fff;">
+                    <span style="font-size: 12px; cursor: pointer;" onclick="doIncreaseBodyFontSize()">A+</span>
+                </li>
+                <li style="display: inline-block; padding: 3px; vertical-align: top; background: #333; color: #fff;">
+                    <span style="font-size: 12px; cursor: pointer;" onclick="doDecreaseBodyFontSize()">A-</span>
+                </li>
+                <li style="display: inline-block; vertical-align: top; margin-top: 5px;">Color Scheme:</li>
+                <li style="display: inline-block; padding: 1px;">
+                    <span onclick="changeTheme('theme3.css')" style="display: inline-block; width: 25px; height: 25px; cursor: pointer; background-color: #285690;"></span>
+                </li>
+                <li style="display: inline-block; padding: 1px;">
+                    <span onclick="changeTheme('default.css')" style="display: inline-block; width: 25px; height: 25px; cursor: pointer; background-color: #adca32;"></span>
+                </li>
+                <li style="display: inline-block; padding: 1px;">
+                    <span onclick="changeTheme('theme1.css')" style="display: inline-block; width: 25px; height: 25px; cursor: pointer; background-color: #6E1A98;"></span>
+                </li>
+                <li style="display: inline-block; padding: 1px;">
+                    <span onclick="changeTheme('theme2.css')" style="display: inline-block; width: 25px; height: 25px; cursor: pointer; background-color: #F0C463;"></span>
+                </li>
+            </ul>
+
+            <!-- Logo and College Name -->
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="logo-left pull-left">
+                        <img id="mainLogoImg" alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOFRNGQh_66qwxHNcbXQwH5gTifw7d_rRfjLeuNw9l8bZefQtjdubfBMCF8xzJaKD87LgwseKSBEvT01HBX0tUHjvJBRpXVPxVDCRtJz-08Ip6WKBRL_T_oNPwOWPdXv5iA2sHmiPe3V3lxSe8wMXznT58-ubTGZK5XkLRmTVTGHLc4qswqdt6usT9uco/s1600/logo1.png" class="img-responsive" style="max-height: 110px;">
+                        <!-- <img id="mainLogoImg" alt="" src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2022/09/gec_kishanganj-removebg-preview.png" class="img-responsive" style="max-height: 110px;"> -->
+                    </div>
+                    <div class="logo-right pull-left" style="margin-left: 10px;">
+                        <span id="logoTextLine1">Government Engineering College, Kishanganj</span>
+                        <span id="logoTextLine2">(Dept. Of Science, Technology &amp; Technical Education, Govt. Of Bihar)</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- Top Header Menu -->
+                <div class="col-sm-5 text-right">
+                    <div class="top-header-menu-wrapper">
+                        
+                        <ul class="top-header-menu">
+                            <li class="hidden-xs"><a  href="#">Home | Important Links  <span class="fa fa-angle-down"> | </a></li>
+                            <li class="hidden-xs" style="border-right: none;">
+                                
+                                    <img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgMPXP1f9WNjRVY4EbMjgGY5BQZBtj3fgydEYvhmpYwbREIx4s3Mtc9emjd1V2n9lvI1PKdoic8_ECBAxpNafgDWdobGWT3Jgc9tYpsQ9WOYBdByCGtcZdfkcLPleb5HcbUNlfsxr0aKu5COo2TWjCb7kZ6ZyuovqjxzqWnyMKqqlEC1Q72O9KaTQsxEA/s1600/bihlogo.png" style="max-height:60px;" />
+                                
+                                <img class="ls-is-cached lazyloaded" alt=""src="/html/geck/download.jpeg"style="max-height: 60px;">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#">About Us <span class="fa fa-angle-down"> </a>
+                <ul class="sbmn" style="margin-top: 10px;">
+                    <li ><a href="#">History</a></li>
+                    <li  ><a href="#">Principle's Message</a></li>
+                    <li  ><a href="#">vision & Mission</a></li>
+                    <li><a href="#">Affiliation</a></li>
+                    <li><a href="#">Allotment and Surrender Report</a></li>
+                    <li><a href="#">About Logo</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Visit Us</a></li>
+                    <li><a href="#">Administration</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Academics <span class="fa fa-angle-down"> </a>
+                <ul class="sbmn" style="margin-top: 10px;">
+                    <li ><a href="#">Admission</a></li>
+                    <li ><a href="#">Academic Regulation</a></li>
+                    <li ><a href="#">Academic Calendar</a></li>
+                    <li ><a href="#">List of Holidays</a></li>
+                    <li ><a href="#">Attendance</a></li>
+                    <li ><a href="#">Syllabus</a></li>
+                    <li ><a href="#">Disiplinary Rule</a></li>
+                    <li ><a href="#">Anti Ragging</a></li>
+                    <li ><a href="#">MOM of Academic Council</a></li>
+                    <li ><a href="#">Notice from Govt.</a></li>
+                    <li ><a href="#">Non Teaching Staff</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Department <span class="fa fa-angle-down"></span> </a>
+                <ul class="sbmn" style="margin-top: 10px;">
+                    <li ><a href="#">Basics Sciences and Humanities</a></li>
+                    <li ><a href="#">Civil Engineering</a></li>
+                    <li ><a href="#">Mechanical Engineering</a></li>
+                    <li><a href="#">Electrical Engineering</a></li>
+                    <li><a href="#">Electronics & Communication</a></li>
+                    <li><a href="#">Compute Science & Engineering</a></li>
+                    <li><a href="#">Computer Science Engineering in Artificial Intelligence and Machine Learning</a></li>
+                    
+
+                </ul>
+            </li>
+            <li><a href="#">Facilities & Services <span class="fa fa-angle-down"></a>
+                <ul class="sbmn" style="margin-top: 10px;">
+                    <li><a href="#">Computer Center</a></li>
+                    <li><a href="#">Central Library</a></li>
+                    <li><a href="#">Hostels</a></li>
+                    <li><a href="#">Sports Facilities</a></li>
+                    <li><a href="#">Medical Facilities</a></li>
+                    <li><a href="#">Guest House</a></li>
+                    <li><a href="#">Gymnasium</a></li>
+                    <li><a href="#">Bank</a></li>
+                    <li><a href="#">Club</a></li>
+                    <li><a href="#">Wi-fi</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Training & Placement <span class="fa fa-angle-down"></a>
+
+
+                <ul class="sbmn" style="margin-top: 10px;"><li><a href="http://geckishanganj.polytropicservices.co.in/training-and-placement/about-placement/">About Placement</a></li><li><a href="http://geckishanganj.polytropicservices.co.in/training-and-placement/placement-brochure/">Placement Brochure</a></li><li><a href="http://geckishanganj.polytropicservices.co.in/training-and-placement/placement-list/">Placement List</a></li></ul>
+            
+            
+            
+            </li>
+            <li><a href="#">Gallery <span class="fa fa-angle-down"></a>
+
+                <ul class="sbmn" style="margin-top: 10px;"><li><a href="http://geckishanganj.polytropicservices.co.in/gallery/image-galleries/">Image Galleries</a></li><li><a href="http://geckishanganj.polytropicservices.co.in/gallery/videos/">Video Galleries</a></li><li><a href="http://geckishanganj.polytropicservices.co.in/gallery/media-galleries/">Media Galleries</a></li></ul>
+            
+            
+            </li>
+            <li><a href="#">Approval <span class="fa fa-angle-down"></a>
+
+                <ul class="sbmn" style="margin-top: 10px;"><li><a href="http://geckishanganj.polytropicservices.co.in/approval/aicte/">AICTE</a></li><li><a href="https://www.geckishanganj.org/approval/b-e-u-p/">B.E.U.P</a></li></ul>
+            
+            
+            
+            </li>
+            <li><a href="#">Login <span class="fa fa-angle-down"></a>
+
+
+                <ul class="sbmn" style="margin-top: 10px;"><li><a href="http://geckishanganj.polytropicservices.co.in/admin-panel/login">Admin Panel</a></li><li><a href="http://geckishanganj.polytropicservices.co.in/faculty-panel/login">Faculty Login</a></li><li><a href="http://geckishanganj.polytropicservices.co.in/student-panel/login">Student Login</a></li></ul>
+            
+            
+            
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- Image Slider (60%) -->
+        <div class="image-slider">
+            <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainCarousel" data-slide-to="1"></li>
+                    <li data-target="#mainCarousel" data-slide-to="2"></li>
+                    <li data-target="#mainCarousel" data-slide-to="3"></li>
+                    <li data-target="#mainCarousel" data-slide-to="4"></li>
+                    <li data-target="#mainCarousel" data-slide-to="5"></li>
+                    <li data-target="#mainCarousel" data-slide-to="6"></li>
+                    <li data-target="#mainCarousel" data-slide-to="7"></li>
+                    <li data-target="#mainCarousel" data-slide-to="8"></li>
+                    <li data-target="#mainCarousel" data-slide-to="9"></li>
+                  
+                </ol>
+    
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiN3Vp9RxH4frhpTPTukBaGlVKJz4PEbCPMu0k_z1tS9Xz87iLEJNbEzBpcigCFioEIAu6bFnrg9Df6skiuTTw1VeVDEdntbkUuJDtivFJux7cqmsOn_GcR7W9RXo7lL48H1aFwMHfx_hpJU1QJwy4ADDuTzxOovT_1hitqcMjbeDk3l7VBhXdYIgtzug/s320/slide_1.jpg" alt="Slide 1">
+                      
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhckuf6KEbDDdHHDfUbdd3kfYvzqe1c7Q1elZAGh6GIOsnpLYh6bDP43H5rnXYn4s8DvGKSP2h7gdv8oItqvVEOdI_2hkMtx6IhfrVXBVWF91MLxZQW5kk38whiObcEOs0iY0AtBDlTvrl-LVnWTLHBpMEzsoWoXrSZ2PeovxgPzNywoQ4aP2aY4f0GRgI" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>STUDENTS OF FIRST BATCH CSE AI&ML</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidK9XaCakU7ZOoX8slcAmW8Dk5mE3cGL5TqKlxmc61kBWMz4fGG4tGt-YALHOo1aorSK8vlncaWuC4jgSt3yDOmjfPB6jwpPgBDfvY_e0HoG6_bVQHYAxJluDhbTKROYGsTzKSi89QgidDZbLJvIM44NDt_FT2eR_d6PmoHopzXuLhrsRWwqR16r1m_o0/s320/slide_3.jpg" alt="Slide 3">
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlNNXgGovXy8k3vkvvSbYLPKJupy5I3SA1Gyd7B0RRB-KScg-HIVT28ddikWKQQDZrL5ZeOzi5_d0TY83IaUckIUBRLr1PLz_j2v8pkj9-oGciHl_H19dFbp6-_3q38ZxLTHvqS7dvp5HZSgYt6_GgUFY9iyLKw8Gs81mVMBdKyFJMPdOcvdEE2hjWfb8/s320/slide_2.jpg" alt="Slide 4">
+                       
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOH9jJSO40rg3h_jqwlqcguEUYhgzEqlhe_gETqWY54tctNI1SLc92zXaamxRuL5yfQgzqswbX1R8zIZfzNFw7NzSWaeSfVlET7xbjkSLBoFwS4cv_FRnfdRVEOTyi3ti4W_XRATP5qDaUt-8lGjyzruV9LDP9R3IQPUlsgchw7H272ea8iY4PEC-sJ2k/s320/slide_5.jpg" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>GEC, Kishanganj approved by AICTE , Under DSTTE,Govt. of Bihar
+                                and Affiliated to BEU, Patna.</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0FY897ybnEHEbFLet9Q8F9xfIauR8jkFqE_-ESr30A5yUiLi2szmAEx2f_q5PHpyyqKSLFsG09LNVm2oFDMGNLwnZFmNKYsfO0vl70xyOjmvXl0UH3ZMOAVe9JI_CPAEmwlXD-YTziojPTjbCY6W9RUmioyZuGwTdct68KKlk7hcZ8eUJoTXKlpKQu6s/s320/slide_6.jpg" alt="Slide 6">
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8fTihj0kKL6LATNqmuU2l_6FVNUp4J7O6j6BWuOU7Q61W8jHtjd9Mz0xN4Pyqlq7HH7-2NVhobAu_SuZv7uUSqVrvEJQW4PGd_wwNvCtLk8jh86uDIcyqM_UpUWO4rnQ4mDAAL7ifE_hAJACHyJjeXEUDoc_t7afgT-Wo75rIfkQJXnl1qM5bwpLMmb4/s320/slide_7.jpg" alt="Slide 7">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Prize distribution day of Khel Kumbh-2023</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPpIrZr2-wmii3hyp1GGHa49MyJPFtUV6tydcXCMEBAKRaL1O4u2cMoc9uSAbMfFR5geAds0AKf6mp3AemW3bPqKcFCVmtE-IrCCkozE9pspyNXn9RpydpBiI4t8O92NSr_FUQgOkenWWkcxEzlpQnyPmAEV6FiBxn5vtjGWCE-VTw7gBzvQGDUbQcia8/s320/slide_8.jpg" alt="Slide 8">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Admin Block & Professors Quarter</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-iDnHHrjsXJdKy0h92QO1kURXvY5mi1gno3lEE7pxu7q1O-c5M-XCBVdg1f-0ABFrnITcnMELeZqy8w8Y-rxNNUihGdiGB_6_HvBskOCOc5NQnURcI10qJS-MQtlWp_hKW4BLo5l9CxH80zJEbgwND4EzTuZM93MTT8O_gJaR3ktqUEMrkH2-Ts4qMzQ/s320/slide_9.jpg" alt="Slide 9">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Civil Engg 2021-2025 Batch</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1ACf-EKulQxEtaFNpTp4h4l8Z44FBeSkyqj0Iig04Bxx6XUCRAJlJiXDqAObf_VMjdhInKE7xOFuEcjVTdVgHhdqR-_fR761I9_BWlcrpxU7FGvEalJSUqSw6vaoKSPy9ApgUYlRE1y11AjezPHnyOcoT1D-Gn4Md8ptCgOkoDuKq4LgsBxI-P8BcxS4/s320/WhatsApp%20Image%202025-04-11%20at%2016.29.23_09ad9c7f.jpg" alt="Slide 10">
+                    </div>
+
+
+
+                </div>
+    
+                <!-- Controls -->
+                <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    
+        <!-- News Slider (40%) -->
+        <div class="news-slider">
+            <h2 >Latest News / Updates</h2>
+            <ul class="news-list">
+                <!-- Add your news items here -->
+                <li class="news-item active" style="background-color: transparent;">
+  
+                </li>
+              
+                <li class="news-item">
+                    <span class="news-date">  <i class="fa fa-clock-o"></i> Oct 16,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Invitation for Quotation for Fire extinguishers Refilling</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 29,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Registration for 28th national youth festival 2025</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 27,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Google Form link for boys hostel allotment due date 27-09-2024 till 5:00PM</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 24,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">B.Tech (Group B) 1st & 2nd Sem  </a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 24,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">B.Tech (Group A) 1st & 2nd Sem  </a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 24,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">AntiRagging Committee GECK </a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Jan 15,2025</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">3rd sem Time Table all Branch </a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Jan 8,2025</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">English debate Comptition </a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Jan 24,2025</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">GECK_Anti ragging helpline_squad_committee</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Dec 5,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Notice for yoga trainer  </a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Nov 13,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Notice for PTM on 19.11.2024</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 28,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">NATS ApprenticeResult</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 26,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Anti ragging notification</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 26,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Recruitment of yoga trainer</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 18,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Notice for Induction program Closing Ceremony 2024.pdf</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 28,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Invitation for Quotation for Fire extinguishers Refilling</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 28,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">NATS ApprenticeResult</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 18,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Notice for Induction program Closing Ceremony 2024.pdf</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 26,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Recruitment of yoga trainer</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 18,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Notice for Induction program Closing Ceremony 2024.pdf</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Oct 28,2024</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">NATS ApprenticeResult</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 29,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Registration for 28th national youth festival 2025</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 27,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">Google Form link for boys hostel allotment due date 27-09-2024 till 5:00PM</a>
+                </li>
+                <li class="news-item">
+                    <span class="news-date"> <i class="fa fa-clock-o"></i> Sep 24,2024</span>
+                    <span class="news-news">News</span>
+                    <span class="news-notice">Notice</span>
+                    <a href="#">B.Tech (Group B) 1st & 2nd Sem  </a>
+                </li>
+
+                <!-- Add more news items as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Notification slider section -->
+ <section id="section-updates-ticker" style="padding: 5px 0;"><div class="container"><div id="ticker-wrapper"><ul id="list-updates" style="width: 2225px; margin-left: 541px;"><li> <i class="fa fa-asterisk"></i> <a href="https://www.geckishanganj.org/wp-content/uploads/sites/14/2023/08/FINAL-THESIS-1.pdf">B.Tech Final year Thesis Guidelines</a></li><li> <i class="fa fa-asterisk"></i> https://youtu.be/hL8aNgydJAw</li><li> <i class="fa fa-asterisk"></i> <noscript><img alt="" src="https://www.geckishanganj.org/wp-content/themes/theme-college/assets/img/new1.gif" /></noscript><img class=" lazyloaded" alt="" src="https://www.geckishanganj.org/wp-content/themes/theme-college/assets/img/new1.gif" data-src="https://www.geckishanganj.org/wp-content/themes/theme-college/assets/img/new1.gif"> College Campus tour for EVC https://youtu.be/dM9NeUVrZag</li><li> <i class="fa fa-asterisk"></i> <a href="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/10/Medical-Test-Report-converted.pdf"><noscript><img class="alignnone size-full wp-image-197" src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/06/new1.gif" alt="" width="26" height="13" /></noscript><img class="alignnone size-full wp-image-197 lazyloaded" src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/06/new1.gif" data-src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/06/new1.gif" alt="" width="26" height="13">Medical Test Report Format for Student.</a></li><li> <i class="fa fa-asterisk"></i> <noscript><img class="alignnone size-full wp-image-197" src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/06/new1.gif" alt="" width="26" height="13" /></noscript><img class="alignnone size-full wp-image-197 ls-is-cached lazyloaded" src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/06/new1.gif" data-src="http://geckishanganj.polytropicservices.co.in/wp-content/uploads/sites/14/2019/06/new1.gif" alt="" width="26" height="13"><a href="https://www.geckishanganj.org.in/2019/06/04/important-information-regarding-admission-in-gec-kishanganj/">Important Information Regarding admission 2019 in GEC, Kishanganj!</a></li></ul><div class="clearfix"></div></div></div></section>
+ <!-- horizontal slide notification end here -->
+
+    <!-- GEC Information Section -->
+    <div class="container-fluid" style="margin-top: 20px; background-color: #e9e9e9; padding: 30px;">
+        <div class="container">
+            <div class="row">
+                <!-- Images Section - 46% width -->
+                <div style="width: 46%; float: left;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-center slide-from-left" style="padding: 0 5px;">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsWDj9a5vynnU4MuiHY9dNypSsKSgSvJV_EaxMIyYvkiSQJgKzDG8x2yyoJqZ7KpEsjbVva_fUzpHjfoSO7NGXzWssOsuNhoaExfuVnz7vQWrL8Sn8DOVeUfbQ0x_KlNKvGg4zy_GyLawsQiHKwyzQTMPzRSvWMYWp02v039GC356hw8NaZq-3hDYv2iM/s320/oldcm.jpg" alt="Sri Nitish Kumar" style="width: 95%; height: 220px; margin-bottom: 10px; border-radius: 15px; border: 1px solid #ddd; object-fit: cover;">
+                                <p style="font-weight: 500;">Sri Nitish Kumar,<br>Hon'ble Chief Minister</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center slide-from-top" style="padding: 0 5px;">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsm-h4wVqt2kCIPJ7-X6aoDzcX7ZFV113GHmIL9MA63R7XManBJNxEoLh7rZUlZiWDNbCCf8mXt84QOBz39fmbQt1jB9iieUBWnWopjYW-S16XsQnXets1JBw_xfJm086CAPM0ovSYeAgh2IEk-87-kluuQNvaWvfKYcbAKbkqhBummzeiVo-n27-Vt7o/s320/minister.jpg" alt="Sri Sumit Kumar Singh" style="width: 95%; height: 220px; margin-bottom: 10px; border-radius: 15px; border: 1px solid #ddd; object-fit: cover;">
+                                <p style="font-weight: 500;">Sri Sumit Kumar Singh,<br>Hon'ble Minister DSTTE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <div style="padding-left: 10%; padding-right: 1.5%; width: 110%;">
+                        <h2 style="color: #333; padding-bottom: 10px; margin-bottom: 20px; position: relative;" class="slide-from-right">GEC Kishanganj</h2>
+                        <p style="text-align: justify; line-height: 1.4; font-size: 16px;">
+                            <strong>Government Engineering College (GEC), Kishanganj</strong> is one of the new Government Engineering Colleges established by the Government of Bihar under the Department of Science Technology & Technical Education. It has been started its first academic session 2019 from the campus of Government Polytechnic Kishanganj, Bihar. The new engineering college has six engineering branches – Civil Engineering, Mechanical Engineering, Electrical Engineering, Electronics & Communication Engineering, Computer Science Engineering, Computer Science Engineering in Artificial Intelligence & Machine Learning with an intake of 60 per branch and 360 students in total.
+                        </p>
+                        <a href="#" style="color: #285690; text-decoration: none; font-weight: 500; font-size: 16px;">Read More »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research and Development Section -->
+    <div class="container-fluid" style="padding: 30px 0; background-color: #285690;">
+        <div class="container">
+            <div class="row" style="display: flex; justify-content: flex-start; padding-left: 2.5%;">
+                <!-- Research Innovation Card -->
+                <div class="feature-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQmIgTxFI3G29mtyFro-i4m4i8l_XxvuuiXV8h2nwtSSSLK7PWJ3bn4B9ERGry_TzSea29n5gwHS_sAUXO4h5STPLcbmFF-z7uud83zhfq10MILF9TLoHjdxt_hkoGkQQJh4qchgzr9csTM6_8FCLLNdbQ_tx641wvaiSe9Wh9BymuIN1HXTVUt7KJOZs/s1600/reasearch.jpg" alt="Research Innovation">
+                    <div class="card-content">
+                        <h3>Research Innovation</h3>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
+                <!-- Skill Development Card -->
+                <div class="feature-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZu9BqeJeH6YxE6Fn512lidro_CJXcS_XcVWIHylJQeIhn6NncwQq1ICOW5lYMk6fKGoG4ULus0JxnbGU3h-O0TVkUKms3Ouartv7MBHeAT2ogOVboOGFJURlIqWj7nnuD-kvKJNgCIJ5J_p5oJOBP-9slL-Wf5mDNMSrdVLkBLBekZPGXhopJTMw3XCA/s1600/Skill.jpg" alt="Skill Development Mission">
+                    <div class="card-content">
+                        <h3>Skill Development Mission</h3>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
+                <!-- AICTE Card -->
+                <div class="feature-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5GoK89oZ9sHHmVLtc0u7oEC7831VCGUXIDU3g2tzfgfnDUaTkwvglx6N6l_wiwIzjqfef6C9L7ziBINI4h0exrCWAkyIPISo944QyxXMBXgIRryHY1WWDL1NsJ-ZX4I1yl1WcurrfDc10zynsfkUqYgLjum0iyk4onLCa2VXnyzAWRK-88YNB7euiS_w/s1600/aicte.jpg" alt="AICTE BODY">
+                    <div class="card-content">
+                        <h3>AICTE BODY</h3>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notice Section with Content -->
+    <div class="container-fluid" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <!-- Left Section - 70% -->
+                <div class="col-md-8">
+                    <!-- Notice Buttons -->
+                    <div class="notice-buttons" style="display: flex; margin-bottom: 0;">
+                        <a href="#" class="notice-btn active" data-content="notices" style="background-color: #017ca8;">
+                            <i class="fa fa-bullhorn"></i> Notices
+                        </a>
+                        <a href="#" class="notice-btn" data-content="tenders" style="background-color: #ea9227;">
+                            <i class="fa fa-file-text"></i> Tenders
+                        </a>
+                        <a href="#" class="notice-btn" data-content="placement" style="background-color: #666666;">
+                            <i class="fa fa-graduation-cap"></i> Placement
+                        </a>
+                        <a href="#" class="notice-btn" data-content="awards" style="background-color: #71A133;">
+                            <i class="fa fa-trophy"></i> Awards
+                        </a>
+                    </div>
+
+                    <!-- Colored Line -->
+                    <div class="content-line" style="height: 4px; background-color: #0082B3; margin-bottom: 0;"></div>
+
+                    <!-- Content Area -->
+                    <div class="notice-content" style="background-color: #fff; padding: 20px; min-height: 400px; border: 1px solid #ddd;">
+                        <!-- Notices Content -->
+                        <div id="notices" class="content-section active">
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> 3rd sem Time Table all Branch</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 15 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Notice for PTM on 19.11.2024</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 12 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> NATS ApprenticeResult</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 10 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Anti ragging notification</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 8 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Recruitment of yoga trainer</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 5 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-more-btn">View More</a>
+                        </div>
+
+                        <!-- Tenders Content -->
+                        <div id="tenders" class="content-section">
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Invitation for Quotation for Fire extinguishers Refilling</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 16 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Tender for Laboratory Equipment</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 14 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Tender for Computer Lab Setup</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 10 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-more-btn">View More</a>
+                        </div>
+
+                        <!-- Placement Content -->
+                        <div id="placement" class="content-section">
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Campus Placement Drive - TCS</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 15 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Placement Statistics 2024-25</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 12 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Pre-Placement Training Schedule</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 10 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-more-btn">View More</a>
+                        </div>
+
+                        <!-- Awards Content -->
+                        <div id="awards" class="content-section">
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> GECK wins Best Engineering College Award 2024</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 16 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Students win Smart India Hackathon 2024</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 14 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <a href="#" class="notice-link"><i class="fa fa-angle-double-right"></i> Faculty Research Excellence Awards</a>
+                                <div class="notice-header">
+                                    <span class="notice-date"><i class="fa fa-clock-o"></i> 10 Jan, 2025</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-more-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section - 30% -->
+                <div class="col-md-4">
+                    <div class="important-links-section">
+                        <h3 class="section-title">
+                            <i class="fa fa-link"></i> Important Links
+                        </h3>
+                        <ul class="important-links-list">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> Education Dept. Bihar</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> DST, Bihar</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> All India Council for Technical Education (AICTE)</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> BCECEB</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> Social Welfare Dept. Bihar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Images Section -->
+    <div class="container-fluid" style="background-color: #285690; padding: 30px 0;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="color: white; margin: 0;"><i class="fa fa-desktop"></i> Latest Images</h2>
+                <a href="#" class="view-all-btn" style="background-color: white; color: #333; padding: 5px 15px; text-decoration: none; border-radius: 4px;">View All</a>
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: space-between;">
+                <div style="flex: 0 0 auto; width: 250px; opacity: 0;" class="latest-image-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiivMQilIdVzuRVBhayxHDYQgQsYPocywU1yaKE_dVo52WEgs2hKnyIzpAQdC2Hqejy8oXMZjFPdawPnRWRUq2twlA-N9uV24Z1LHrxXG8ZfTq35jF6-1yyxEFheTI6yLdQAVlsmm3ekrbkT9MTCBgqIYEuIpRJzRKwYkWrx4M_ypF6w2rfumENgbabc8g/s320/WhatsApp%20Image%202025-04-11%20at%2016.42.57_c3de1bca.jpg" alt="Latest Image 1" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div style="flex: 0 0 auto; width: 250px; opacity: 0;" class="latest-image-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZJSFn04V6jI_ERCqiszEvO2o7IRrKRrZl3ybLHy3FFcdM05DJZinwTABBaRk0ZCscs80m24SSv9SjnarihQ6zMngDIC3K4qqMEKHmpL7qzbNU-PsNm7SQTtL3xNcXDTc1iAuhHFrAPKPh3cCNPtebymxiulF932hm8lJ0xURgsfbAugtUyt0OLOHdiiE/s320/WhatsApp%20Image%202025-04-11%20at%2016.43.41_05fbc603.jpg" alt="Latest Image 2" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div style="flex: 0 0 auto; width: 250px; opacity: 0;" class="latest-image-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgltrB7tKYEa3nTrfAD-uCj1bxj7oOPbwBsqRXL1xFqY8Ys4l3K38NxhEUfUYAqEdzlOckEkvw7sH3QbrEYr46OAp4-7WSblAQ832uMdJHSzKLJeus5cxr9k1QAyO8zqUcOv44dbKG8Y2O6WcDCYeQV5YPdwQdck4yyn0kmJgq9tJWCLELVcwC5YjplqKo/s320/latest2.jpg" alt="Latest Image 3" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div style="flex: 0 0 auto; width: 250px; opacity: 0;" class="latest-image-card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiR0PFZxGSgjvYEDZJC-Ec8LtVH7WaZa5xdBJtqK1bk_cfhgIY_9HJY27S8KVWkxi6RX48PUqSvw6sFNGPXHPivBC8wgzkuH7ZfcgQ5m2gHoSgexnm_caA3dmMkMX-rdDdorTAKwBHVc0SqQb5N726S8edIq7VIljhPxNmSDmNyKfUgI_L0YTxSaxHfRs/s320/latest3.jpg" alt="Latest Image 4" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="container-fluid" style="background-color: #1a3b66; padding: 30px 0;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 10px; font-size: 22px;">
+                <i class="fa fa-share-alt"></i> Follow Us On Social Network
+            </h2>
+            <div style="width: 1111px; height: 0.5px; background-color: white; margin-bottom: 30px;"></div>
+            <div class="row" style="display: flex; justify-content: center; gap: 30px;">
+                <!-- Twitter Section -->
+                <div class="col-md-4">
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">
+                        <i class="fa fa-twitter"></i> Twitter @ GEC, Kishanganj
+                    </h3>
+                    <div style="background-color: white; border-radius: 5px; padding: 0; min-height: 425px; overflow: hidden;">
+                        <div style="max-height: 425px; overflow: auto;">
+                            <div class="twitter-timeline twitter-timeline-rendered" style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;">
+                                <iframe id="twitter-widget-0" 
+                                    scrolling="no" 
+                                    frameborder="0" 
+                                    allowtransparency="true" 
+                                    allowfullscreen="true" 
+                                    class="" 
+                                    style="position: static; visibility: visible; width: 100%; height: 425px; display: block; flex-grow: 1;"
+                                    title="Twitter Timeline" 
+                                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/GECkishanganj">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Facebook Section -->
+                <div class="col-md-4">
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">
+                        <i class="fa fa-facebook"></i> Facebook @ GEC, Kishanganj
+                    </h3>
+                    <div style="background-color: white; border-radius: 5px; padding: 0; min-height: 425px; overflow: hidden;">
+                        <div class="fb-page" 
+                             data-href="https://www.facebook.com/Government-Engineering-College-Kishanganj-107192218761604" 
+                             data-tabs="timeline" 
+                             data-width="430"
+                             data-height="425" 
+                             data-small-header="false" 
+                             data-adapt-container-width="true" 
+                             data-hide-cover="false" 
+                             data-show-facepile="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links Section -->
+    <div class="container-fluid" style="background-color: #f8f9fa; padding: 30px 0; border-top: 1px solid #ddd;">
+        <div class="container">
+            <div class="row" style="display: flex; justify-content: space-between;">
+                <!-- First Column -->
+                <div class="col-md-3" style="border-right: 1px solid #ddd; padding-right: 30px;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Academic Calendar</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Vocational Courses</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Requirement</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Phone Directory</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Placement</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- NSS Column -->
+                <div class="col-md-3" style="border-right: 1px solid #ddd; padding: 0 30px;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">NSS</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Accounts</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Photo Gallery</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Students Activity</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="#" style="color: #333; text-decoration: none; font-size: 15px;">Alumni</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Location Column -->
+                <div class="col-md-3" style="border-right: 1px solid #ddd; padding: 0 30px;">
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="font-size: 16px; margin-bottom: 10px;">Location:</h4>
+                        <p style="font-style: italic; color: #666; margin-bottom: 5px;">Government Engineering College, Mahesh Bathna, Kishanganj,</p>
+                        
+                        <p style="font-style: italic; color: #666;">Pin: 855107, Bihar</p>
+                    </div>
+                </div>
+
+                <!-- Find us on Column -->
+                <div class="col-md-3" style="padding-left: 30px;">
+                    <div>
+                        <h4 style="font-size: 16px; margin-bottom: 10px;">Find us on:</h4>
+                        <div style="margin-bottom: 15px;">
+                            <a href="#" style="color: #1DA1F2; margin-right: 15px;"><i class="fa fa-twitter"></i></a>
+                            <a href="#" style="color: #4267B2; margin-right: 15px;"><i class="fa fa-facebook"></i></a>
+                            <a href="#" style="color: #DB4437;"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <h4 style="font-size: 16px; margin-bottom: 5px;">Call us on:</h4>
+                        <p style="color: #666;">95708 72406 (Admission)</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 16px; margin-bottom: 5px;">Email us on:</h4>
+                        <p style="color: #666; margin-bottom: 3px;">geckishanganj@gmail.com(Principal)</p>
+                        <p style="color: #666;">geck.tpo@gmail.com(TPO)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 15px 0; margin-top: 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 0 30px;">
+            <div style="font-size: 14px; margin-left: -25px;">© Copyright 2025 Cse-Ai+Ml 23-002 </div>
+            <div style="font-size: 14px;">VISITORS: <span id="visitor-count">0</span></div>
+            <div style="font-size: 14px; margin-right: -25px;">
+                <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Contact us</a> | 
+                <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 10px; font-size: 12px; color: #666;">
+            Designed and cloned by Cse-Ai+Ml 23-002
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.navbar ul li');
+
+            dropdowns.forEach(dropdown => {
+                const submenu = dropdown.querySelector('.sbmn');
+
+                if (submenu) {
+                    dropdown.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        dropdowns.forEach(d => {
+                            if (d !== dropdown) {
+                                d.classList.remove('active');
+                            }
+                        });
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.sbmn')) {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                }
+            });
+        });
+
+        // JavaScript for font size adjustment
+        function doIncreaseBodyFontSize() {
+            var body = document.body;
+            var currentSize = window.getComputedStyle(body, null).getPropertyValue('font-size');
+            var newSize = parseFloat(currentSize) + 1;
+            body.style.fontSize = newSize + 'px';
+        }
+
+        function doDecreaseBodyFontSize() {
+            var body = document.body;
+            var currentSize = window.getComputedStyle(body, null).getPropertyValue('font-size');
+            var newSize = parseFloat(currentSize) - 1;
+            body.style.fontSize = newSize + 'px';
+        }
+
+        // JavaScript for theme change
+        function changeTheme(theme) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = theme;
+            document.head.appendChild(link);
+        }
+
+//second gpt for upper alter
+$(document).ready(function () {
+    function slideNews() {
+        let newsList = $('.news-list');  
+        let firstItem = $('.news-item:first'); // Select first item
+        let secondItem = $('.news-item:eq(1)'); // Select second item (which will slide up)
+
+        secondItem.animate({ marginTop: '-49px' }, 500, function () {
+            firstItem.appendTo(newsList); // Move first item to the last
+            $('.news-item').css('marginTop', '0px'); // Reset margins
+        });
+    }
+
+    setInterval(slideNews, 3500); // Change every 3.5s
+});
+
+//end second gpt
+        
+
+//third gpt
+
+//third gpt end
+
+$(document).ready(function() {
+    $('.notice-btn').click(function(e) {
+        e.preventDefault();
+        
+        // Update active button
+        $('.notice-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        // Get the background color of clicked button and update line color only
+        const btnColor = $(this).css('background-color');
+        $('.content-line').css('background-color', btnColor);
+        
+        // Show corresponding content
+        const contentId = $(this).data('content');
+        $('.content-section').removeClass('active');
+        $('#' + contentId).addClass('active');
+    });
+});
+
+        // Visitor Counter Logic
+        function getVisitorCount() {
+            let count = localStorage.getItem('visitorCount');
+            if (!count) {
+                count = Math.floor(Math.random() * (999999 - 100000) + 100000);
+                localStorage.setItem('visitorCount', count);
+            } else {
+                count = parseInt(count) + Math.floor(Math.random() * 5);
+                localStorage.setItem('visitorCount', count);
+            }
+            document.getElementById('visitor-count').textContent = count.toLocaleString();
+        }
+
+        // Update visitor count every 5 seconds
+        getVisitorCount();
+        setInterval(getVisitorCount, 5000);
+
+    </script>
+
+    <!-- Overlay Dialog Box -->
+    <div class="overlay-dialog" id="overlayDialog" style="display: none;">
+        <div class="dialog-box">
+            <i class="fa fa-exclamation-triangle"></i>
+            <h2>Important Notice</h2>
+            <p>This is a clone website of GEC Kishanganj, not the official portal. Created for educational/demonstration purpose only.</p>
+            <button onclick="closeDialog()">I Understand</button>
+        </div>
+    </div>
+
+    <script>
+    // Dialog Box Logic
+    function closeDialog() {
+        const dialog = document.getElementById('overlayDialog');
+        dialog.style.display = 'none';
+        // Remove the dialog from DOM after animation completes
+        setTimeout(() => {
+            dialog.remove();
+        }, 500);
+    }
+
+    // Show dialog on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const dialog = document.getElementById('overlayDialog');
+        if (dialog) {
+            dialog.style.display = 'flex';
+        }
+    });
+    </script>
+
+</body>
+</html>
