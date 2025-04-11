@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Engineering College, Kishanganj</title>
-    <!-- Include Yanone Kaffeesatz Google Font -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Facebook SDK -->
+
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
     
     <style>
-        /* Reset styles */
+
         * {
             margin: 0;
             padding: 0;
@@ -23,12 +22,330 @@
             font-family: 'Poppins', sans-serif;
         }
 
+ 
+        .container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+      
+        .row {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .col-md-3, .col-md-4, .col-md-6, .col-md-8 {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+            position: relative;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+      
+        .content-wrapper {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+        }
+
+        .image-slider {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .news-slider {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+
+        @media (min-width: 320px) {
+            .content-wrapper {
+                width: 100%;
+            }
+            
+            .image-slider {
+                width: 100%;
+            }
+            
+            .news-slider {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .content-wrapper {
+                width: 100%;
+            }
+            
+            .image-slider {
+                width: 100%;
+            }
+            
+            .news-slider {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .content-wrapper {
+                width: 100%;
+            }
+            
+            .image-slider {
+                width: 60%;
+            }
+            
+            .news-slider {
+                width: 40%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .content-wrapper {
+                width: 100%;
+            }
+            
+            .image-slider {
+                width: 60%;
+            }
+            
+            .news-slider {
+                width: 40%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .content-wrapper {
+                width: 100%;
+            }
+            
+            .image-slider {
+                width: 60%;
+            }
+            
+            .news-slider {
+                width: 40%;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .content-wrapper {
+                width: 100%;
+            }
+            
+            .image-slider {
+                width: 60%;
+            }
+            
+            .news-slider {
+                width: 40%;
+            }
+        }
+
+  
+        @media (max-width: 767px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .navbar ul li {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .navbar ul li ul {
+                position: static;
+                width: 100%;
+                display: none;
+            }
+            
+            .top-header-menu {
+                display: none;
+            }
+            
+            .top-header .logo-right {
+                text-align: center;
+            }
+            
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .feature-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .latest-image-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .social-media-section .row {
+                flex-direction: column;
+            }
+            
+            .social-media-section .col-md-4 {
+                margin-bottom: 20px;
+            }
+        }
+
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .feature-card {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            
+            .latest-image-card {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+
+
+        @media (min-width: 1025px) and (max-width: 1366px) {
+            .container {
+                max-width: 1000px;
+            }
+            
+            .feature-card {
+                width: 31%;
+                margin-bottom: 20px;
+            }
+            
+            .latest-image-card {
+                width: 23%;
+                margin-bottom: 20px;
+            }
+        }
+
+
+        @media (min-width: 1367px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+
+        .mobile-menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .mobile-menu-toggle {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                background: #285690;
+                color: white;
+                cursor: pointer;
+            }
+            
+            .navbar ul {
+                display: none;
+            }
+            
+            .navbar.active ul {
+                display: flex;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            h3 { font-size: 18px; }
+            p { font-size: 14px; }
+        }
+
+   
+        @media (max-width: 767px) {
+            footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            footer .container > div {
+                margin-bottom: 15px;
+            }
+        }
+
+ 
+        @media (max-width: 767px) {
+            .dialog-box {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+
+   
+        @media (max-width: 767px) {
+            .news-slider {
+                height: auto;
+                max-height: none;
+            }
+            
+            .news-item {
+                padding: 8px;
+            }
+        }
+
+ 
+        @media (max-width: 767px) {
+            .carousel-inner .item img {
+                height: 300px;
+            }
+            
+            .carousel-caption {
+                width: 100%;
+                padding: 5px;
+            }
+        }
+
         body {
             background-color: #ffffff;
             color: #333;
         }
 
-        /* Top Header Styles */
         .top-header {
             background-color: #f8f9fa;
             border-bottom: 1px solid #ddd;
@@ -234,21 +551,21 @@ margin-top: -7px;
 
        
         .main-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
         }
 
         .content-wrapper {
-            display: flex;
-          
             width: 100%;
-            max-width: 1280px;
+            max-width: 100%;
             margin: 0;
-            margin-top: -19px; 
-
-           
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
         }
 
        
@@ -287,7 +604,7 @@ margin-top: -7px;
     
     .carousel-inner .item img {
         width: 100%;
-        height: 480px;
+        height: auto;
         object-fit: cover;
     }
 
@@ -311,9 +628,10 @@ margin-top: -7px;
     }
 
     .news-list {
-        position: absolute;
         width: 100%;
-        padding: 15px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -1047,6 +1365,98 @@ margin-top: -7px;
     }
 }
 
+/* GEC Information Section Styles */
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Images Section - 46% width */
+.col-md-6:first-child {
+    width: 46%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Text Section - 54% width */
+.col-md-6:last-child {
+    width: 54%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Text Content Styles */
+.col-md-6:last-child > div {
+    padding-left: 5%;
+    padding-right: 2%;
+    width: 100%;
+}
+
+/* Media Queries for GEC Information Section */
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    .col-md-6:first-child,
+    .col-md-6:last-child {
+        width: 100%;
+    }
+    
+    .col-md-6:last-child > div {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6:first-child {
+        width: 50%;
+    }
+    
+    .col-md-6:last-child {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-md-6:first-child {
+        width: 46%;
+    }
+    
+    .col-md-6:last-child {
+        width: 54%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-6:first-child {
+        width: 46%;
+    }
+    
+    .col-md-6:last-child {
+        width: 54%;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -1112,6 +1522,9 @@ margin-top: -7px;
 
     <!-- Navigation Bar -->
     <nav class="navbar">
+        <div class="mobile-menu-toggle">
+            <i class="fa fa-bars"></i> Menu
+        </div>
         <ul>
             <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
             <li><a href="#">About Us <span class="fa fa-angle-down"> </a>
@@ -1974,5 +2387,13 @@ $(document).ready(function() {
     });
     </script>
 
+    <script>
+        // Add this to your existing JavaScript
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+
 </body>
+</html>
 </html>
